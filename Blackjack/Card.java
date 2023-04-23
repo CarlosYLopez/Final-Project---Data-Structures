@@ -1,3 +1,6 @@
+package Blackjack;
+
+
 public class Card {
     private String suit;
     private String rank;
