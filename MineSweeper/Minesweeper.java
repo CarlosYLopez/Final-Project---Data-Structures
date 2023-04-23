@@ -1,3 +1,4 @@
+//File written by Aldo Vega and Carlos Y. Lopez
 package MineSweeper;
 import java.util.Scanner;
 import java.util.Queue;
