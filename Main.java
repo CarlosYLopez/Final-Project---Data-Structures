@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to the game hub!");
+        System.out.println("Welcome to the game center!");
         System.out.println("Select a game to play:");
         System.out.println("1. Minesweeper");
         System.out.println("2. Blackjack");

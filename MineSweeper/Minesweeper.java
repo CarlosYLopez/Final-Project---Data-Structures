@@ -18,7 +18,7 @@ public class Minesweeper {
         numRevealed = 0;
     }
 
-    // Method to play the game and provide brief instructions
+    // Function to play the game and provide brief instructions
     public void play() {
         System.out.println("Starting new game...");
         System.out.println("Example input for reveal r 2 3, will reveal Row 2 Col 3.");
@@ -51,7 +51,7 @@ public class Minesweeper {
         }
 
         if (numRevealed + board.getMinePositions().size() == board.board.length * board.board[0].length) {
-            System.out.println("Congratulations! You won the game!");
+            System.out.println( "You won the game!");
         }
     }
     
