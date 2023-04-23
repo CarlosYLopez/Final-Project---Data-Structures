@@ -19,8 +19,7 @@ public class Blackjack implements Game {
 
     public void play() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to Classic Blackjack!");
-
+        
         // Deal initial cards
         this.player_hand.addCard(this.deck.dealCard());
         this.dealer_hand.addCard(this.deck.dealCard());

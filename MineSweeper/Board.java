@@ -1,4 +1,4 @@
-//FILE WRITTEN BY Aldo Vega
+//FILE WRITTEN BY CARLOS Y. LOPEZ
 package MineSweeper;
 
 import java.util.HashSet;
