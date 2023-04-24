@@ -22,6 +22,7 @@ public class Connect4Board {
         }
     }
 
+    //print the board
     public void displayBoard() {
         for (int i = 0; i < ROWS; i++) {
             for (int j = 0; j < COLUMNS; j++) {
@@ -31,6 +32,7 @@ public class Connect4Board {
         }
     }
 
+    //replace valid empty square with piece
     public int placePiece(int column, char player) {
         for (int i = ROWS - 1; i >= 0; i--) {
             if (board[i][column] == '-') {
@@ -109,6 +111,7 @@ public class Connect4Board {
         return false;
     }
 
+    //undo button
     public boolean undoLastMove() {
         if (!lastMoves.isEmpty()) {
             int[] lastMove = lastMoves.pop();

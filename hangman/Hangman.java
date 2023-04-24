@@ -17,6 +17,7 @@ public class Hangman {
     public void play() {
         Scanner scanner = new Scanner(System.in);
         
+        //display current game state information and intake next character
         while (remainingAttempts > 0 && !hangmanWord.isSolved()) {
             System.out.println("Remaining attempts: " + remainingAttempts);
             System.out.println("Guessed letters: " + hangmanWord.getGuessedLetters());
@@ -25,10 +26,11 @@ public class Hangman {
             char guessedLetter = scanner.next().charAt(0);
 
             if (!hangmanWord.guessLetter(guessedLetter)) {
-                remainingAttempts--;
+                remainingAttempts--;                        //subtract current number of attempt if wrong
             }
         }
 
+        //check if word is complete
         if (hangmanWord.isSolved()) {
             System.out.println("Congratulations! You guessed the word: " + hangmanWord.getSecretWord());
         } else {

@@ -10,6 +10,7 @@ public class WordList {
     
     private final List<String> words;
 
+    //word bank
     public WordList() {
         words = Arrays.asList("elephant", "ambiguity", "multimedia", "hippopotamus", "crocodile", "sherlockholmes", "spongebob");
     }
